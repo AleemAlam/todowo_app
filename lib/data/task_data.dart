@@ -3,12 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:todowo/components/task.dart';
 
 class TaskData extends ChangeNotifier {
-  List<Task> _tasks = [
-    Task(name: "buy Something"),
-    Task(name: "buy bread"),
-    Task(name: "buy egg"),
-    Task(name: "buy milk"),
-  ];
+  List<Task> _tasks = [];
 
   UnmodifiableListView<Task> get tasks {
     return UnmodifiableListView(_tasks);
